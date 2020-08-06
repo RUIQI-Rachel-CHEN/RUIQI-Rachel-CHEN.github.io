@@ -1,0 +1,522 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Single - Future Imperfect by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async
+			  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+	  </script>
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Blog</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Profile</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Lorem ipsum</h3>
+											<p>Feugiat tempus veroeros dolor</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Dolor sit amet</h3>
+											<p>Sed vitae justo condimentum</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Feugiat veroeros</h3>
+											<p>Phasellus sed ultricies mi congue</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Etiam sed consequat</h3>
+											<p>Porta lectus amet ultricies</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Auto Portfolio Management</a></h2>
+										<p>a model to automatically manage stock portfolios</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2019-10-01">October 1, 2019</time>
+										<a href="#" class="author"><span class="name">Rachel Chen</span><img src="images/logal2.png" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="images/Stock.png" alt="" /></span>
+
+								<section>
+									<div class="container">
+					
+										<h3>Executive Summary</h3>
+										<p>
+											As more and more people make investments in stock markets today, stock portfolio management
+											becomes much more popular than years ago. Some people can afford asset management service to
+											gain profit, while most people manage their portfolios themselves with their limited knowledge
+											and experience. The portfolio strategies vary a lot and sometimes it’s hard to understand the
+											mechanism behind the black box. This project aims to build up a model which help people manage
+											their stock portfolios automatically.
+					
+											In this project, we select 505 stocks of S&P 500 companies as our initial stock pool. Then we
+											crawl some key financial ratios from Yahoo Finance to filter these stocks. After several rounds
+											of filter based on their financial ratio performance, we keep 68 stocks. Then we crawl news of
+											these 68 companies from Yahoo Finance and make sentiment analysis, the result of which is also
+											taken into their final evaluation. Based on the financial ratio performance and sentiment
+											analysis result, we score these stocks with our model and select the top 20 as our final
+											portfolio. Lastly, we use Monte Carlo method to determine the allocation of our investment
+											amount on each stock.
+					
+											To verify the model efficiency, we test our portfolio and make comparison with S&P Index. The
+											result is ideal, so we believe that we provide a good model. This model, however, has no dynamic
+											auto-trade function and only provide a one-time portfolio management. We will update and
+											optimize our model to realize more advanced functions in near future.
+					
+										</p>
+					
+										<h3>Business Goal Analysis</h3>
+										<p>
+											This project aims to build up a model to automatically manage stock portfolios. The model will
+											filter stocks based on the financial ratio performance and sentiment analysis of news for
+											previous 12 months. Also, it will provide the optimal allocation for each stock.
+					
+											This project can help manage stock portfolios to gain more profit and better understand the
+											mechanism behind the black box of some portfolio management tools.
+										</p>
+											<h3>Dataset Description</h3>
+										<p>
+											Initial stock set is chosen from S&P 500 market. S&P 500, which considered to be one of the best
+											representations of the U.S. stock market, measures the stock performance of 500 large companies
+											listed on stock exchanges in the United States. Plus, S&P 500 stock has more exposure degree to
+											public, meaning that we can grab more relative data to do financial analysis, as well as more
+											news to do sentiment analysis.                         The ratios we heavily considered were: ROE, PEG, and Profit Margin. We will first explain what these ratios indicate, then give a detailed analysis of individual firms we finally select.
+					
+											<!-- <br><br>
+												In an effort to better understand the dataset, we conducted an exploratory analysis which yielded the following observations: -->
+										</p>
+										<!-- <ul>
+												<li>Contracts that were held by more tenured clients had lower churn rates.</li>
+												<li>Contracts that paid for less seats had higher churn rates.</li>
+												<li>Contracts associated with greater user engagement, as measured by monthly user logins, had lower churn rates.</li>
+												<li>Clients that were on non-standard contracts (duration greater than 12 months) had higher churn rates. </li>
+											</ul> -->
+					
+										<img src="./images/pic1.png" alt="EDA" width="500" class="center"">
+										   <div class="notefont" ><i>Figure 1. Key component in Yahoo Finance (Apple)</i></div> 
+										<br>
+											<h4>ROE (Return on Equity)</h4>
+											<p>It's a basic test of how effectively a company's management uses investors' money. ROE indicates whether management is growing the company's value at an acceptable rate.</p>
+											<h4>PEG (Price/Earnings to Growth ratio)</h4>
+											<p>PEG is a widely employed indicator of a stock's possible true value. Similar as PE ratios, a lower PEG means that the stock is undervalued more. It is favored by many over the Price/Earnings ratio because it also accounts for growth. 1 means stock is traded at a fair value.</p>
+											<h4>Profit Margin</h4>
+											<p>Profit margin is one of the commonly used profitability ratios to gauge profitability of a business activity. A higher the Profit Margin means that the target company has higher profitability. It represents how much percentage of sales has turned into profits.</p>
+										<img src="./images/pic2.png" alt="EDA"  height="125" width="500" class="center"">
+										<div class="notefont" ><i>Figure 2. Initial 505 stock information</i></div> 
+										<br>
+										<p>When we grasp data from Yahoo Finance, we found that all financial indices have the same class in HTML. We can use the description as key to find the ratios. Finally, we get 505 stocks with 6 features.</p>
+										<img src="./images/pic3.png" alt="EDA"  height="190" width="500" class="center"">
+										<div class="notefont" ><i>Figure 3. Dataset Overview</i></div> 
+					
+											
+											<h3>System Design</h3>
+											<p>We select stocks that meet the standard of financial analysis. In other words, we keep the stock whose indices perform better than overall stock market. Regular stock investment is value investment, which means that we will hold the stock if we are optimistic with company’s future. Since we seek to gain as much profit as possible in short time, we use finance news to do sentiment analysis. Investors are sensitive to news, giving them the chance to speculate.
+											</p>
+											<img src="./images/pic4.png" alt="EDA"  height="120" width="580" class="center"">
+											<div class="notefont" ><i>Figure 4. Workflow Chart</i></div> 
+											<ol>
+												<li>Yahoo Finance</li>
+													<p class="listMargin">Selecting Yahoo Finance as our dataset source based on two reasons.
+														<br>
+														(a)	Yahoo Finance contain all the data we need.
+														<br>
+														(b)	Yahoo Finance is system-friendly to web crawlers.
+														</p>
+												<li>Data/News crawling</li>
+													<p class="listMargin">Using ‘beautifulsoup’ as primary tool to grasp financial indices and News.
+														</p>
+												<li>Data Processing</li>
+													<p class="listMargin">Dropping all the stocks which have missing value.
+														<br>
+														After first-round selection, dropping all the stock with extreme value.
+														</p>
+												<li>Sentimental Analysis</li>
+													<p class="listMargin">Appling NLTK model to all the news and generate additional score system.
+														</p>
+												<li>Ratio Scaling</li>
+													<p class="listMargin">Scale finical indices from 0 to 1 to rating the stocks.
+														</p>
+												<li>Stock Selection</li>
+													<p class="listMargin">
+														(a)	In the first round, we filter all the stock that meet the financial rules.
+														<br>
+														(b)	In the second round, we filter all the stock that meet the sentimental analysis standard.
+														</p>
+												<li>Rating</li>
+													 <p class="listMargin">
+														To better evaluate stocks, we create a rating system based on financial rules.
+														</p>
+												<li>Allocation</li>
+													<p class="listMargin">
+														Utilizing Markowitz's mean-variance portfolio theory to obtain a proper weight distribution of the portfolio.                                    </p>
+												
+											  </ol>
+					
+											  <h3>System implementation</h3>
+												  <i><strong>Financial Ratio Selection Rules</strong></i>
+												  <p>By conducting the financial ratio analysis and sentiment analysis, we can filter and select stocks which we believe it will have a good performance. The selection rules are processed orderly as follow:</p>
+												  <ol>
+													<li>Drop the missing value (NaN). In this step, 478 stock left where just a small portion of the stock has missing value.</li>
+													<li>Select stock whose ROE ratio is greater than 16.7% (Average ROE of S&P 500, csimarket.com). We set the 16.7% as the benchmark of the selection rule to ensure the further performance of the stock has a higher likelihood to exceed the average performance within the market. After this step, 221 stocks left which is a 53.77% decrease from 478 optional stocks.</li>
+													<li>Select stock whose PEG(5yrs) ratio is lower than 2.5. Although the PEG(5yrs) ratio we set is higher than 1 which indicate the stock is overvalued, we think this setting value can cover both some stocks are undervalued (PEG lower than one) and those stocks who are reasonably overvalued by market expectation. By conducting this step, 129 stocks left.</li>
+													<li>Select stock whose Profit Margin is higher than industrial sector average profit margin. We follow the same logic as the second selection rule to find the stock which has a higher likelihood to performance better than the average performance within the sector. After this step, 68 out of 129 stocks left.</li>
+												</ol>
+												<img src="./images/pic5.png" alt="EDA"  height="280" width="500" class="center"">
+												<div class="notefont" ><i>Figure 5. Stock change after each filter</i></div> 
+												<br>
+												<p>After we finish the first-round selection, 68 out 505 stocks are selected such as Adobe Inc. (ADBE), Biogen Inc. (BIIB), Union Pacific Corporation (UNP), etc. The changes in the stocks number left is shown above. 
+											   
+												</p>
+												<p>
+													Basically, financial indices influence longer stock price, while financial news influences short term price. Since investment period is limited in one month. We will apply sentiment analysis to stock portfolio after financial analysis in order to achieve as much return as possible.
+												</p>
+												<i>Sentiment Analysis</i>
+												<p>After the financial ratio selection rules filter, we conduct another most important filter – Sentiment Analysis. News can reflect many vital information of the company and influence the market trend as well. And a lot of general stock players make their transactions mostly based on the news rather than deep research. In this way, news has significant impact on the stock price and traders’ behavior.
+					
+												</p>
+												<p>
+													In this part, we crawl the news of the 68 left stocks from Yahoo Finance, setting the time period from Dec 2018 to Dec 2019. We collect 1,409 pieces of news in total and use the Natural Language Toolkit (NLTK) to get sentiment scores for sentiment analysis.
+												</p>
+												<img src="./images/pic6.png" alt="EDA"  height="140" width="750
+												" class="center"">
+												<div class="notefont" ><i>Figure 6. 1409 press releases of these 68 stocks since December 2018</i></div> 
+												<br>
+												<p>The NLTK package generates 4 different scores for each piece of news. They are positive score, neutral score, negative score and compound score. We use compound score as our filter and calculate the average compound score for each stock. Based on the average compound score, we remove any stock with a score lower than 0.8. We remove 16 stocks in this part and there are 52 stocks left.
+					
+												</p>
+												<img src="./images/pic7.png" alt="EDA"  height="300" width="750
+												" class="center"">
+												<div class="notefont" ><i>Figure 7. Sentiment Analysis Score</i></div> 
+												<br>
+												<i>Modify the ratios & Evaluation</i>
+												<P>In order to rank these 52 stocks with a new evaluation rule, we modified relative financial ratios and build selection rules. And the modifications are processed orderly as follow:
+					
+												</P>
+												<ol>
+													<li>To reduce outlier, we calculate Variance Profit Margin by setting the max value cap as 2. After comparing the sector’s average value, we get scaled Variance Profit Margin (SPEG).</li>
+													<li>We get scaled ROE (SROE) by setting the max value cap as 60. The main purpose of these two steps adjustments is to reduce the influence from the outliers. Some extreme unordinary activities may not have a positive influence on the market value of the stock in
+														the long run.</li>
+													<li>We generate a new factor by calculating scaled PEG. Traditional scaled PEG formula is  \( 𝑆𝑃𝐸𝐺 ={𝑃𝐸𝐺 - 𝑃𝐸𝐺. 𝑚𝑖𝑛 \over 𝑃𝐸𝐺. 𝑚𝑎𝑥 − 𝑃𝐸𝐺. 𝑚𝑖𝑛 }\).
+														Low PEG indicating that stock value is underestimated, which is opposite to initial PEG formula. To set the correlation between scaled ratio and PEG as same direction, we reverse the formula by calculating the difference between the variance of PEG and value of PEG. We can get the revised Scaled PEG:
+														\[ 𝑆𝑃𝐸𝐺 = {{𝑃𝐸𝐺. 𝑚𝑎𝑥 - 𝑃𝐸𝐺. 𝑚𝑖𝑛} - 𝑃𝐸𝐺\over 𝑃𝐸𝐺. 𝑚𝑎𝑥 − 𝑃𝐸𝐺. 𝑚𝑖𝑛} \]
+														</li>
+													<li>Three financial indices have its own disadvantage. We need to combine to get an objective effective weight.
+														Compared with the other two indices, margin has relatively more limitation such as it doesn’t take the industry of company into consideration and it may reflect paper profit rather than actual profit, while return on equity can reflect company’s overall profit ability. So that we rank three indices at first, then we take news into consideration.
+														In strong valid market, stock price can totally reflect investors’ participation, news has limited influence. However, current market is semi-strong market. We can do speculate based on information asymmetry. Since the communication technology grow rapidly, news takes up the least weight.</li>
+												   </ol>
+												   <p>Based on the theory, we generate the following formula:
+													𝑅𝑎𝑡𝑖𝑛𝑔 = 𝑆𝑃𝐸𝐺 ∗ 0.25 + 𝑆𝑂𝑅𝐸 ∗ 0.35 + 𝑆𝑉𝑃𝑀 ∗ 0.2 + 𝑁𝐸𝑊𝑆 ∗ 0.2</p>
+													<img src="./images/pic8.png" alt="EDA"  height="300" width="750
+													" class="center"">
+													<div class="notefont" ><i>Figure 8. Scaled Data</i></div> 
+													<br>
+													<p>We set the weight of each factor by trying different allocations manually. The basic goal
+					
+														is to find the balance among all the value of new evaluation of 52 stocks.
+														</p>
+													<p>After we applied the new evaluation function, we can rank 48 stocks by the value of
+					
+														evaluation. Then we select the top 20 stocks as our final selection. The table of 20 stocks we pick
+														
+														are as follow:
+														</p>
+														<img src="./images/pic9.png" alt="EDA"  height="300" width="750
+														" class="center"">
+														<div class="notefont" ><i>Figure 9. Top 20 Rating stocks</i></div> 
+														<br>
+														<p>We use these 20 U.S. stocks to form our stock portfolio, the next step is to find the
+					
+															appropriate approach to allocate the weight of each investment.
+															</p>
+														<i>Allocation</i>
+														<p>To obtain a proper weight distribution of the portfolio, we utilize Markowitz's mean- variance portfolio theory, which is a technique used by investors to make decisions about financial instruments to invest in, based on the amount of risk that they are willing to accept (risk tolerance).The calculations in our report are based on the adjusted closing price column to calculate stock return, because it standardizes stock splits, dividends, and other corporate behavior, and can truly reflect stock returns over time. We use the price difference of two days to divide the price of the previous day to calculate stock returns. Variance (or its square root standard deviation) is used to measure risk. A higher standard deviation in investment returns means higher risk because the
+															data distribution is farther from the mean and the volatility of returns is greater. The mean reflects the asset's return. The covariance of the portfolio reflects the impact of correlations between different assets on overall risk. We apply Monte Carlo method [1]to randomly generate a set of weights, calculate the returns and standard deviations for this combination. We generate 9 random numbers and normalize them to get a random set of weight data. We Repeat this process for 10,000 times and plot the returns and standard deviations of each combination into a scatter plot. The red curve is shown in the figure, that is, the effective boundary.
+					
+														</p>
+														<img src="./images/pic10.png" alt="EDA"  height="300" width="500
+														" class="center"">
+														<div class="notefont" ><i>Figure 10. Scatter Plot with Effective Boundary</i></div> 
+														<br>
+					
+														<p>According to Markowitz’s mean-variance portfolio theory, rational investors always
+					
+															maximize the expected return at a given level of risk or minimize the expected risk at a given level
+															
+															of return, which reflected in the figure is the effective boundary shown by the red curve. Only the
+															
+															points on the effective boundary are the most effective investment portfolios. In order to find a
+															
+															balance between returns and risks, we us the Sharpe ratio variable, which calculates the excess
+															
+															return for each unit of risk to help us make better decisions. We first calculate the Sharpe ratio
+															
+															corresponding to the combination of Monte Carlo simulations and plotted it as a third variable in
+															
+															a return-risk scatter plot. We find that the combination of the upper edges of the scatter plot has a
+															
+															higher Sharpe ratio. We then find the combination with the largest Sharpe ratio and plotted it in a
+															
+															return-risk scatter plot and highlighted the point with the largest Sharpe ratio in the return-risk
+															
+															scatter plot.
+															</p>
+					
+															<img src="./images/pic11.png" alt="EDA"  height="300" width="500
+															" class="center"">
+															<div class="notefont" ><i>Figure 11. Scatter Plot with Highlighted Point</i></div> 
+															<br>
+					
+															<p>After that, we extract the weight corresponding to the maximum Sharpe Ratio and finally get the weight of the portfolio with the maximum Sharpe Ratio. The results are shown below:</p>
+															<img src="./images/pic12.png" alt="EDA"  height="350" width="500
+															" class="center"">
+															<div class="notefont" ><i>Figure 12. Final Investment Portfolio</i></div> 
+															<br>
+														
+														<h3>Performance Evaluation</h3>
+														<p>To figure out the performance of our stock portfolio investment strategy, we assume the initial investment amount is $1,000,000. By tracking the historical market data, we can get the short-term performance of the investment strategy from Oct 1st, 2019 to Dec 6th, 2019. Or we can get the long-term performance from the beginning of this year to now. Finally, we suppose our investment strategy will be invested on specific dates (Jan 2nd, 2019, Apr 1st, 2019, Jul 1st, 2019, and Oct 1st, 2019) and all the shares will be sold on Dec 10th, 2019. To simplify the process, we ignore the tax expense, commission payment, etc. We generate a return table which is shown below:</p>
+														<img src="./images/pic13.png" alt="EDA"  height="80" width="500
+														" class="center"">
+														<div class="notefont" ><i>Figure 13. Return on each date</i></div> 
+														<br>
+														<p>Compare with the S&P 500 index to check whether our investment strategy perform well.
+					
+															The return table is shown below:
+															</p>
+														 <img src="./images/pic14.png" alt="EDA"  height="100" width="500
+														" class="center"">
+														<div class="notefont" ><i>Figure 14. Return Comparison</i></div> 
+														<br>
+					
+														<img src="./images/pic15.png" alt="EDA"  height="210" width="600
+														" class="center"">
+														<div class="notefont" ><i>Figure 15. Return Comparison 2019 Jan - Dec</i></div> 
+														<br>
+					
+														<img src="./images/pic16.png" alt="EDA"  height="210" width="600
+														" class="center"">
+														<div class="notefont" ><i>Figure 16. Return Comparison 2019 Nov - Dec</i></div> 
+														<br>
+														<p>Generally, we can say that the performance of our investment strategy is better than the performance of S&P 500 index. And if we invest the capital at the beginning of this year (Jan 2nd, 2019), our stock portfolio investment strategy can get the maximin return (41.88%). To get detailed data of the performance, we generate the return table for 20 stocks in this portfolio. 17 stocks have positive returns and 3 stock have negative returns. See table below:</p>
+														<img src="./images/pic17.png" alt="EDA"  height="270" width="450
+														" class="center"">
+														<div class="notefont" ><i>Figure 17. Return of each Stock</i></div> 
+														<br>
+					
+														<h3>Conclusion and Future Direction</h3>
+														<p>In general, we build this model based on financial ratios and news sentiment analysis. The evaluation result of this model is ideal with a total return of around 42%, which is higher than that of S&P Index, 25%. Though the actual return will be lower than our evaluation result, it still proves that our model manages the stock portfolio successfully. We can conclude that we develop a successful model to manage stock portfolios and our model realizes the business goal, to gain profit.
+					
+														</p>
+														<p>There are still a lot more to do to optimize the model. Firstly, the model can only help manage the portfolio for one single time but not manage it dynamically. As we want to generate profit via transactions but not holding the stocks in hand. Secondly, the financial ratios we have chosen are still in the basic level, which cannot fully reflect the financial status of the target company. Thirdly, we conduct sentiment analysis on the news of previous 12 month and calculate the average compound score. In real world, people react towards every piece of news but not the overall news of a whole period. The method we use to deal with the news needs further improvement. Last but not the least, not all the 20 stocks in the final portfolio have a positive return, which means our model can still select stocks with bad performance.
+					
+														</p>
+													
+					
+					
+					
+						
+					
+					
+					
+					
+					
+					
+					
+					
+											<!-- <ol type=" 1">
+										<li>Separate the data for clients into individual rows for each contract renewal period (12-15
+											months)</li>
+										<li>Define churn as two consecutive months without renewal after a contract expires, and create a
+											binary classification variable </li>
+										<li>Isolate the input data for the first half of the contract period and compute summary
+											transformations (eg. average, min, max, % change) as follows:
+											<img src="../images/credit2.png" alt="Data Cleaning" width="800"><br><br>
+										</li>
+										<li>For Page Hits data, use Principal Components Analysis to reduce the number of features from 106
+											to 2</li>
+										<li>For NA values, add a new boolean variable to indicate missing data and then fill the NA value
+											with 0, assuming that NAs indicate little to no activity</li>
+										<li>Create dummy variables for categorical variables</li>
+										<li>Remove rows with poor data quality (negative values, percentages above 100%, contract lengths
+											outside range)</li>
+										</ol>
+					
+										<h3>Model</h3>
+										<p>
+											The method used for the churn model was Random Forest due to its easy interpretability. Four
+											hyper-parameters (max depth of trees, split criterion, minimum samples per leaf, minimum samples
+											to split) were tuned using grid search, and 10-fold cross-validation was used to control
+											overfitting. The score used for the model was F1 as the main focus was to predict customer
+											churn, namely the true positives.
+											<br><br>
+											Our best model has 0.89 AUC and 0.36 F1.
+											<img src="../images/credit3.png" alt="AUC" width="500"><br>
+											Out of the 101 churn cases, the model was able to capture half of the customers who churned.
+											<img src="../images/credit4.png" alt="Confusion Matrix" width="800"><br>
+											If we only look at the first 20 predictions sorted in decreasing order by the probabilities
+											produced by the model, the performance of the model enhanced as 20 out of 30 predictions are
+											actual future churned users. This translated to a true positive rate of 67%.
+											<img src="../images/credit5.png" alt="Prbability Thresholds" width="800"><br>
+											Random Forest also shed light on what the important customer attributes were when evaluating
+											their likelihood to churn. The most important one was customer age, how long the customer has
+											been using the product, which is a proxy of customers’ loyalty.
+											<img src="../images/credit6.png" alt="Feature Importance" width="800"><br>
+										</p>
+					
+										<h3>Conclusion</h3>
+										<p>
+											Our recommendation to the management team at CreditRiskMonitor is to implement a
+											“Customer-At-Risk Retention” program with the following components:
+										</p>
+										<ul>
+											<li>Incorporate the model within the account management software in a way that each account that
+												is “at-risk” of churning in 6 months gets flagged and a notification is sent to the account
+												managers
+												<ul style="list-style-type:circle;">
+													<li>The optimum threshold should be set by CRM based on the likely success rate of the
+														account managers to retain customers-at-risk</li>
+												</ul>
+											</li>
+											<li>Account Managers should then reach out to the subscribers asking for discussions about how
+												they are using the service and ways to improve the perceived value proposition. Depending on
+												the user feedback account managers can do the following:
+												<ul style="list-style-type:circle;">
+													<li>Provide training on the best use practices </li>
+													<li>Provide training on how the FRISK® score functions</li>
+													<li>Send more marketing nurtures</li>
+													<li>Conduct new training with the users</li>
+													<li>Seek out new users at the subscriber (either in the same department or in different
+														ones)</li>
+													<li>Potentially travel to the subscriber for an in-person meeting (rare) </li>
+													<li>Consider discounting a renewal price to maintain the contract</li>
+												</ul>
+											</li>
+										</ul>
+										<p>Additionally, CreditRiskMonitor should also take the following steps:</p>
+										<ul>
+											<li>Focus retention efforts on customers in their first year of using the service</li>
+											<li>Identify the common reasons that account managers are resorting to non-standard contracts
+												and incorporate stricter guidelines on offering an extra 3 months</li>
+										</ul>
+									</div> -->
+								</section>
+					
+
+								
+								<!-- <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+								<p>Nunc quis dui scelerisque, scelerisque urna ut, dapibus orci. Sed vitae condimentum lectus, ut imperdiet quam. Maecenas in justo ut nulla aliquam sodales vel at ligula. Sed blandit diam odio, sed fringilla lectus molestie sit amet. Praesent eu tortor viverra lorem mattis pulvinar feugiat in turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce ullamcorper tellus sit amet mattis dignissim. Phasellus ut metus ligula. Curabitur nec leo turpis. Ut gravida purus quis erat pretium, sed pellentesque massa elementum. Fusce vestibulum porta augue, at mattis justo. Integer sed sapien fringilla, dapibus risus id, faucibus ante. Pellentesque mattis nunc sit amet tortor pellentesque, non placerat neque viverra. </p> -->
+								
+								
+								
+								
+								
+								
+								
+								<footer>
+									<ul class="stats">
+										<li><a href="#">Web Analytics</a></li>
+										<li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">12</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
