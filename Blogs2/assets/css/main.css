@@ -3633,3 +3633,114 @@ input, select, textarea {
 		.picmargin{
 			padding:0.7em 0
 		}
+
+		.text-align{
+			text-align:justify
+			}
+
+		.textPMargin{
+			margin:1em
+		}
+
+		.github_block_container{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+
+		.github_block {
+			font-family: Catamaran, Arial, sans-serif;
+			text-rendering: optimizeLegibility;
+			color: rgba(0,0,0,0.8);
+			word-break: break-word;
+			overflow-wrap: break-word;
+			box-sizing: inherit;
+			box-shadow: rgb(230, 230, 230) 0px 0px 0px 1px inset;
+			margin-top: 32px;
+			min-width: 300px;
+			width: 50%;
+		  }
+		  
+		  .github_content{
+			padding: 0px;
+			display: flex;
+			flex: 0 0 auto;
+		  }
+		  
+		  .github_inner_content{
+			display: flex;
+			justify-content: center;
+			padding: 16px 20px;
+			flex-direction: column;
+			flex: 1 1 auto;
+		  }
+		  
+		  .github_name{
+			margin: 0;
+			overflow: hidden;
+			font-weight:600;
+			color: #292929;
+			text-overflow: ellipsis;
+			font-size: 18px;
+			line-height: 22px;
+			max-height: 44px;
+			font-family: Catamaran, Arial, sans-serif;
+			letter-spacing: normal ;
+			text-transform: none ;
+		  }
+		  
+		  .github_description_container{
+			margin-top: 8px;
+			display: block;
+		  }
+		  
+		  .github_description{
+			margin: 0;
+			line-height: 20px;
+			color: #757575;
+			overflow: hidden;
+			font-weight: 300;
+			font-size: 16px;
+			text-overflow: ellipsis;
+			max-height: 40px;
+			font-family: Catamaran, Arial, sans-serif;
+			letter-spacing: normal ;
+			text-transform: none ;
+		  }
+		  
+		  .github_source_container{
+			margin-top: 12px;
+			display: block;
+		  }
+		  
+		  .github_source{
+			margin: 0;
+			line-height: 20px;
+			color: #757575;
+			overflow: hidden;
+			font-weight: 300;
+			font-size: 15px;
+			text-overflow: ellipsis;
+			max-height: 40px;
+			font-family: Catamaran, Arial, sans-serif;
+			letter-spacing: normal ;
+			text-transform: none ;
+		  }
+		  
+		  .github_image_container{
+			width: 160px;
+			display: block;
+		  }
+		  
+		  .github_image{
+			display: block;
+			  box-shadow: rgb(230, 230, 230) 0px 0px 0px 1px inset;
+			width: 160px;
+			background-image: url("https://avatars0.githubusercontent.com/u/59073360?s=460&u=ce666fc9dd26eb020b21556ad4c91c521888ec55&v=4");
+			background-origin: border-box;
+			background-size: cover;
+			height: 167px;
+			background-position: 50% 50%;
+			max-width: 100%;
+		  }

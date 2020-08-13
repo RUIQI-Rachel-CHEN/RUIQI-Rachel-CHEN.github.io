@@ -23,7 +23,7 @@ doc.ready(function () {
   // $(window).scrollTop(0);
 
   var typed = new Typed(".mytext", {
-    strings: ["Learner", "Data Scientist", "Machine Learning Enthusiast"],
+    strings: ["Quick Learner", "Data Scientist", "Machine Learning Enthusiast"],
     smartBackspace: true, // Default value
     loop: true,
     backDelay: 1000,

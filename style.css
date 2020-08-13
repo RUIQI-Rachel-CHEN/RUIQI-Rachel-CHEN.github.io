@@ -725,9 +725,9 @@ ul.filter li.filter-active {
 }
 
 .testi-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
+  width: 460px;
+  height: 460px;
+  border-radius: 300px;
   padding: 5px;
   border: 1px solid #ddd;
   margin: 0 auto;
@@ -838,6 +838,10 @@ ul.filter li.filter-active {
 
 .post-inner {
   border: 1px solid #ddd;
+}
+
+.blog-content{
+  margin-top: 35px;
 }
 
 .blog-content:hover .post-image img {
@@ -997,4 +1001,8 @@ pre code {
 
 .post-name a:hover {
   color:#888;
+}
+
+.text-align{
+text-align:justify
 }

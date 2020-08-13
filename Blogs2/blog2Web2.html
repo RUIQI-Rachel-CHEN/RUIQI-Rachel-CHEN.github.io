@@ -22,18 +22,20 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Blog</a></h1>
+						<h1><a href="../index.html#blog">Blog</a></h1>
 						<nav class="links">
 							<ul>
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Profile</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="../index.html#main">Home</a></li>
+								<li><a href="../index.html#about">About</a></li>
+								<li><a href="../index.html#services">Profile</a></li>
+								<!-- <li><a href="../index.html#blog">Blog</a></li> -->
+								<li><a href="../index.html#Leadership">Leadership</a></li>
+								<li><a href="../index.html#contact">Contact</a></li>
 							</ul>
 						</nav>
 						<nav class="main">
 							<ul>
-								<li class="search">
+								<!-- <li class="search">
 									<a class="fa-search" href="#search">Search</a>
 									<form id="search" method="get" action="#">
 										<input type="text" name="query" placeholder="Search" />
@@ -41,7 +43,7 @@
 								</li>
 								<li class="menu">
 									<a class="fa-bars" href="#menu">Menu</a>
-								</li>
+								</li> -->
 							</ul>
 						</nav>
 					</header>
@@ -102,11 +104,11 @@
 							<article class="post">
 								<header>
 									<div class="title">
-										<h2><a href="#">Auto Portfolio Management</a></h2>
-										<p>a model to automatically manage stock portfolios</p>
+										<h2><a href="#">Predictive Keyboard</a></h2>
+										<p>a model for automatic sentence completion</p>
 									</div>
 									<div class="meta">
-										<time class="published" datetime="2019-10-01">October 1, 2019</time>
+										<time class="published" datetime="2019-10-01">November 25, 2019</time>
 										<a href="#" class="author"><span class="name">Rachel Chen</span><img src="images/logal2.png" alt="" /></a>
 									</div>
 								</header>
@@ -201,16 +203,22 @@
 											<div class="notefont" ><i>Figure 3. NLP Experiments and Demos</i></div> 
 											<br><br>
 											<h3>Recommendations & Future Improvements</h3>
-											<p>There are two aspects where we could further enhance and improve.
-												<br>
-												<strong>Computing Power</strong>
-												<br>
-												With the current computing power (in our case, we only had access to CPUs) and memory we had access to, the model takes an extensive amount of time to train and fine-tune. To train the whole dataset which is over 1.1GB of data, it requires more than 300TB memory to handle the input and it will probably take days to train. If we could have access to computers or Cloud instances with high GPUs and high memory which we would have to pay money for, we could experience more on model tuning. 
-												<br>
-												<strong>Deployment</strong>
-												<br>
-												For next steps, the model can be deployed onto a web server so that users can interact with it. We considered using FLASK to build a front-end back end web UI to host the model.
+											<p>There are three aspects where we could further enhance and improve.
+											
+												<p class="text-align"><strong>Computing Power</strong><br>	With the current computing power (in our case, we only had access to CPUs) and memory we had access to, the model takes an extensive amount of time to train and fine-tune. To train the whole dataset which is over 1.1GB of data, it requires more than 300TB memory to handle the input and it will probably take days to train. If we could have access to computers or Cloud instances with high GPUs and high memory which we would have to pay money for, we could experience more on model tuning. 
 												</p>
+											
+												<p class="text-align"><strong>Deployment</strong><br>For next steps, the model can be deployed onto a web server so that users can interact with it. We considered using FLASK to build a front-end back end web UI to host the model.
+												</p>
+												
+												<p class="text-align"><strong>Data Source</strong><br>The Enron data set consists of emails using casual language which includes improper grammar and typo that might have contributed to inconsistent prediction. As a future direction, more advanced data cleaning techniques for this kind of data should be looked into.
+												</p>
+
+										
+												
+												
+												
+
 											
 											
 											
@@ -403,7 +411,7 @@
 														<br>
 					
 														<h3>Conclusion and Future Direction</h3>
-														<p>In general, we build this model based on financial ratios and news sentiment analysis. The evaluation result of this model is ideal with a total return of around 42%, which is higher than that of S&P Index, 25%. Though the actual return will be lower than our evaluation result, it still proves that our model manages the stock portfolio successfully. We can conclude that we develop a successful model to manage stock portfolios and our model realizes the business goal, to gain profit.
+														<p>In general, we build this model based on financial ratios and news sentiment analysis. The evaluation result of this model is ideal with a total return of around 42%, which is higher than that of S&P Index, 25%. Though the actual return will be lower than our evaluation result, it still proves that our model manages the stock portfolio successfully. We can conclude that we develop a successful model to manage stock portfolios and our model realizes the business goal to gain profit.
 					
 														</p>
 														<p>There are still a lot more to do to optimize the model. Firstly, the model can only help manage the portfolio for one single time but not manage it dynamically. As we want to generate profit via transactions but not holding the stocks in hand. Secondly, the financial ratios we have chosen are still in the basic level, which cannot fully reflect the financial status of the target company. Thirdly, we conduct sentiment analysis on the news of previous 12 month and calculate the average compound score. In real world, people react towards every piece of news but not the overall news of a whole period. The method we use to deal with the news needs further improvement. Last but not the least, not all the 20 stocks in the final portfolio have a positive return, which means our model can still select stocks with bad performance.
@@ -513,7 +521,7 @@
 								
 								<footer>
 									<ul class="stats">
-										<li><a href="#">Web Analytics</a></li>
+										<li><a href="#">Deep Learning</a></li>
 										<li><a href="#" class="icon solid fa-heart">28</a></li>
 										<li><a href="#" class="icon solid fa-comment">12</a></li>
 									</ul>
@@ -525,13 +533,16 @@
 				<!-- Footer -->
 					<section id="footer">
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
+							<li><a href="https://www.linkedin.com/in/rachelruiqi-chen/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/RUIQI-Rachel-CHEN" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="mailto:rchen112@fordham.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+						<!-- <p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p> -->
 					</section>
 
 			</div>

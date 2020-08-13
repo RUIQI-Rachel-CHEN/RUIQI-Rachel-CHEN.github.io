@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Single - Future Imperfect by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Catamaran">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async
+			  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+	  </script>
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../index.html#blog">Blog</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="../index.html#main">Home</a></li>
+								<li><a href="../index.html#about">About</a></li>
+								<li><a href="../index.html#services">Profile</a></li>
+								<!-- <li><a href="../index.html#blog">Blog</a></li> -->
+								<li><a href="../index.html#Leadership">Leadership</a></li>
+								<li><a href="../index.html#contact">Contact</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<!-- <li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li> -->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Lorem ipsum</h3>
+											<p>Feugiat tempus veroeros dolor</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Dolor sit amet</h3>
+											<p>Sed vitae justo condimentum</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Feugiat veroeros</h3>
+											<p>Phasellus sed ultricies mi congue</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Etiam sed consequat</h3>
+											<p>Porta lectus amet ultricies</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Automated Data Extraction</a></h2>
+										<p>An automated data extraction tool to save the manpower required to extract relevant content</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2019-10-01">September 5, 2019</time>
+										<a href="#" class="author"><span class="name">Rachel Chen</span><img src="images/logal2.png" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="../img/blog/w3.png" alt="" /></span>
+
+								<section>
+									<div class="container">
+					
+										<h3>Executive Summary</h3>
+										<p class="text-align">
+											Web crawling is the extraction of needed data from websites. In this blog, I give two web crawling demos that I have done using different methods. I used Python as the scripting language, Beautiful Soup and Selenium library to extract the necessary information. The types of web pages that I crawled include static web pages and dynamic web pages. Static web pages are web content that is fixed and not capable of action or change. A web site that is static can only supply information that is written into the HTML source code and this information will not change unless the change is written into the source code. However, Dynamic web pages contain dynamically-generated content that is returned by a server based on a user's request. The user can request for the information, which can be retrieved from the database based on the user input parameters.					
+										</p>
+					
+										<h3>Business Goal Analysis</h3>
+										<p class="text-align">
+											A web crawler can be an invaluable tool to save the manpower required to extract relevant content, which allows you more time to actually review and analyze the data, putting it to work for your business. A web crawler can be set up to locate and gather complete or partial content from public websites, and the information can be provided to you in an easily manageable format. Without web crawler, more manpower is required to manually browse through numerous product pages and copy paste the pricing one by one into Excel sheet. This process would be very repetitive, especially if data are collected every day/every hour.
+
+										</p>
+											<h3>Demos</h3>
+											<p><i><strong>•	Static web pages crawling demo</strong></i></p>
+											<strong>Webpage:</strong>&nbsp;&nbsp;https://www.rottentomatoes.com/
+									        <br><strong>Tool used:</strong>&nbsp;&nbsp;Python request, beautiful Soup
+											<br><strong>Overview:</strong>&nbsp;&nbsp;Use python code to automatically crawl 10 pages of randomly selected 10 movies from rotten tomatoes. Collect information, such as 'movie name', 'rating', 'release date' for each movie. Finally, format data to a dataframe and put them into csv file. 
+											<br><strong>Scarping logic:</strong>
+												<ol>
+												<li>Construct the URL of the search results page from Rotten Tomatoes. </li>
+												<li>Download HTML of the search result page using Python Requests.</li>
+												<li>Parse the web pages using beautiful Soup. </li>
+												<li>Save the data to a CSV file.</li>
+											   </ol>&nbsp;&nbsp;
+											
+											<!-- <br><br>
+												In an effort to better understand the dataset, we conducted an exploratory analysis which yielded the following observations: -->
+										</p>
+										<!-- <ul>
+												<li>Contracts that were held by more tenured clients had lower churn rates.</li>
+												<li>Contracts that paid for less seats had higher churn rates.</li>
+												<li>Contracts associated with greater user engagement, as measured by monthly user logins, had lower churn rates.</li>
+												<li>Clients that were on non-standard contracts (duration greater than 12 months) had higher churn rates. </li>
+											</ul> -->
+					
+										<img src="./images/RottenTomatoes.png" alt="EDA" width="800" class="center">
+										   <div class="notefont textPMargin" ><i>Figure 1. Screenshot of some of the data extracted from rotten tomatoes</i></div> 
+										<br><br>
+										<img src="./images/RottenTomatoesDF.png" alt="EDA" width="800" class="center">
+											<div class="notefont textPMargin" ><i>Figure 2. Screenshot of sample data extracted from rotten tomatoes </i></div> 
+										<br><br><br>
+											
+										<p><i><strong>•	Dynamic web pages crawling demo</strong></i></p>
+										<strong>Webpage:</strong>&nbsp;&nbsp;https://finance.yahoo.com/
+										<br><strong>Tool used:</strong>&nbsp;&nbsp;selenium
+										<br><strong>Overview:</strong>&nbsp;&nbsp;Use python code to automatically visit the yahoo finance homepage of the given three stocks("FB","AAPL","GOOG"), find the press release section corresponding to each stock, automatically scroll down to the bottom for 3 times, and collect information as following: news title, news release date, news content. 
+										<br><strong>Scarping logic:</strong>
+												<ol>
+												<li>Create a WebDriver instance. </li>
+												<li>Construct the URL of the search results page from Yahoo Finance.</li>
+												<li>Locate an HTML element on the selected Web page using selenium.</li>
+												<li>Save the data to a CSV file.</li>
+											   </ol>&nbsp;&nbsp;
+										<br><br>
+										<img src="./images/Kapture 2020-08-11 at 11.19.57.gif" alt="EDA" width="800" class="center">
+										   <div class="notefont textPMargin" ><i>Figure 3. Yahoo finance web page crawling demo</i></div> 
+										<br><br>
+
+										<img src="./images/YahooFinanceDF.png" alt="EDA" width="800" class="center">
+											<div class="notefont textPMargin" ><i>Figure 4. Screenshot of sample data extracted from yahoo finance </i></div> 
+										<br><br>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+					
+										<h3>Conclusion and Future Direction</h3>
+										<p class="text-align">In this post, I’ve demonstrated how Selenium, request and Beautiful Soup work with examples. The two web scrapers mentioned above can work on any public webpages with some necessary revision. However, some certain webpages legitimate restrictions in place. On the other hand, some sites welcome and encourage data to be retrieved from their website and in some cases provide an API to make things easier. Either way, it’s better to check with the terms and conditions before starting any crawling.
+	
+										</p>
+
+										<div class="github_block_container">
+											<div class="github_block">
+												<a href="https://github.com/RUIQI-Rachel-CHEN/Web_Crawler" target="_blank">
+												<div class="github_content">
+													<div class="github_inner_content">
+													<h2 class="github_name">
+														RUIQI-Rachel-CHEN/Web_Crawler
+													</h2>
+													<div class="github_description_container">
+														<h3 class="github_description">
+															This Selenium web scraper was used in the data collection phase of a larger project to analyze writer and reader…
+														</h3>
+													</div>
+													<div class="github_source_container">
+														<h4 class="github_source">
+															github.com           
+														</h4>
+													</div>
+													</div>
+													<div class="github_image_container">
+													<div class="github_image">
+													
+													</div>
+													</div>
+												</div>
+												</a>
+											</div>
+										</div>
+										   
+													
+					
+					
+					
+						
+					
+					
+					
+					
+					
+					
+					
+					
+											<!-- <ol type=" 1">
+										<li>Separate the data for clients into individual rows for each contract renewal period (12-15
+											months)</li>
+										<li>Define churn as two consecutive months without renewal after a contract expires, and create a
+											binary classification variable </li>
+										<li>Isolate the input data for the first half of the contract period and compute summary
+											transformations (eg. average, min, max, % change) as follows:
+											<img src="../images/credit2.png" alt="Data Cleaning" width="800"><br><br>
+										</li>
+										<li>For Page Hits data, use Principal Components Analysis to reduce the number of features from 106
+											to 2</li>
+										<li>For NA values, add a new boolean variable to indicate missing data and then fill the NA value
+											with 0, assuming that NAs indicate little to no activity</li>
+										<li>Create dummy variables for categorical variables</li>
+										<li>Remove rows with poor data quality (negative values, percentages above 100%, contract lengths
+											outside range)</li>
+										</ol>
+					
+										<h3>Model</h3>
+										<p>
+											The method used for the churn model was Random Forest due to its easy interpretability. Four
+											hyper-parameters (max depth of trees, split criterion, minimum samples per leaf, minimum samples
+											to split) were tuned using grid search, and 10-fold cross-validation was used to control
+											overfitting. The score used for the model was F1 as the main focus was to predict customer
+											churn, namely the true positives.
+											<br><br>
+											Our best model has 0.89 AUC and 0.36 F1.
+											<img src="../images/credit3.png" alt="AUC" width="500"><br>
+											Out of the 101 churn cases, the model was able to capture half of the customers who churned.
+											<img src="../images/credit4.png" alt="Confusion Matrix" width="800"><br>
+											If we only look at the first 20 predictions sorted in decreasing order by the probabilities
+											produced by the model, the performance of the model enhanced as 20 out of 30 predictions are
+											actual future churned users. This translated to a true positive rate of 67%.
+											<img src="../images/credit5.png" alt="Prbability Thresholds" width="800"><br>
+											Random Forest also shed light on what the important customer attributes were when evaluating
+											their likelihood to churn. The most important one was customer age, how long the customer has
+											been using the product, which is a proxy of customers’ loyalty.
+											<img src="../images/credit6.png" alt="Feature Importance" width="800"><br>
+										</p>
+					
+										<h3>Conclusion</h3>
+										<p>
+											Our recommendation to the management team at CreditRiskMonitor is to implement a
+											“Customer-At-Risk Retention” program with the following components:
+										</p>
+										<ul>
+											<li>Incorporate the model within the account management software in a way that each account that
+												is “at-risk” of churning in 6 months gets flagged and a notification is sent to the account
+												managers
+												<ul style="list-style-type:circle;">
+													<li>The optimum threshold should be set by CRM based on the likely success rate of the
+														account managers to retain customers-at-risk</li>
+												</ul>
+											</li>
+											<li>Account Managers should then reach out to the subscribers asking for discussions about how
+												they are using the service and ways to improve the perceived value proposition. Depending on
+												the user feedback account managers can do the following:
+												<ul style="list-style-type:circle;">
+													<li>Provide training on the best use practices </li>
+													<li>Provide training on how the FRISK® score functions</li>
+													<li>Send more marketing nurtures</li>
+													<li>Conduct new training with the users</li>
+													<li>Seek out new users at the subscriber (either in the same department or in different
+														ones)</li>
+													<li>Potentially travel to the subscriber for an in-person meeting (rare) </li>
+													<li>Consider discounting a renewal price to maintain the contract</li>
+												</ul>
+											</li>
+										</ul>
+										<p>Additionally, CreditRiskMonitor should also take the following steps:</p>
+										<ul>
+											<li>Focus retention efforts on customers in their first year of using the service</li>
+											<li>Identify the common reasons that account managers are resorting to non-standard contracts
+												and incorporate stricter guidelines on offering an extra 3 months</li>
+										</ul>
+									</div> -->
+								</section>
+					
+
+								
+								<!-- <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+								<p>Nunc quis dui scelerisque, scelerisque urna ut, dapibus orci. Sed vitae condimentum lectus, ut imperdiet quam. Maecenas in justo ut nulla aliquam sodales vel at ligula. Sed blandit diam odio, sed fringilla lectus molestie sit amet. Praesent eu tortor viverra lorem mattis pulvinar feugiat in turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce ullamcorper tellus sit amet mattis dignissim. Phasellus ut metus ligula. Curabitur nec leo turpis. Ut gravida purus quis erat pretium, sed pellentesque massa elementum. Fusce vestibulum porta augue, at mattis justo. Integer sed sapien fringilla, dapibus risus id, faucibus ante. Pellentesque mattis nunc sit amet tortor pellentesque, non placerat neque viverra. </p> -->
+								
+								
+								
+								
+								
+								
+								
+								<footer>
+									<ul class="stats">
+										<li><a href="#">Automated Data Extraction</a></li>
+										<li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">12</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+							<!-- <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li> -->
+							<!-- <a href="https://github.com/RUIQI-Rachel-CHEN" target="_blank"><i class="fa fa-github"></i></a> -->
+							<li><a href="https://www.linkedin.com/in/rachelruiqi-chen/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/RUIQI-Rachel-CHEN" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="mailto:rchen112@fordham.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<!-- <p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p> -->
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
